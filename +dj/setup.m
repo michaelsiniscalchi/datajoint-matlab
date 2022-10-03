@@ -27,8 +27,8 @@ requiredToolboxes = {...
     )...
     };
 try
+    % Commented 221003mjs -- incompatible with cluster computing
     %         ghtb.require(requiredToolboxes, 'prompt', prompt);
-    ghtb.require(requiredToolboxes, 'prompt', prompt);
 catch ME
     installPromptMsg = {
         'Toolbox ''%s'' did not meet the minimum requirements.'
